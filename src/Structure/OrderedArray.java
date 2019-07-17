@@ -26,19 +26,23 @@ public class OrderedArray {
         }
 
         while (true) {
-            curIn = (lowerBound + upperBound) / 2;
-            if(target == intArray[curIn]){
+            curIn = (lowerBound + upperBound) / 2;   //小数向下取整
+            if(target == intArray[curIn]){  //恰好等于中间值的情况
                 return curIn;
-            }else if(target == intArray[upperBound]){
-                return upperBound;
-            }else if(target == intArray[lowerBound]){
-                return lowerBound;
-            }else if(target < intArray[curIn]){
-                curIn = upperBound;
-            }else if(target > intArray[curIn]){
-                curIn = lowerBound;
+            }else if(curIn == lowerBound){ //如果中间下标==最小下标 说明数组只有1或2个值
+                if(target == intArray[upperBound]) {    //如果只有1或者2值 判断是否等于最大值或者最小值即可
+                                                        // 而上一个if已经判断过不等于中间的情况，int向下取整，即不等于最小值
+                    return upperBound;
+                }else{  //高位元素也不等于target
+                    return -1;
+                }
             }else{
-                return -1;
+                //搜索段中至少有三个元素 且当前元素不等于target
+                if(intArray[curIn] < target){
+                    lowerBound = curIn;
+                }else{
+                    upperBound = curIn;
+                }
             }
         }
     }
@@ -58,12 +62,8 @@ public class OrderedArray {
 
     //删除
     public boolean delete (int target) {
-        System.out.println("进入delete了！");
         int location = this.find(target);
-        System.out.println("进入delete了！");
-
         if(location != -1){
-            System.out.println("进入if判断了！");
             //找到了相应的数值
             for (int i =location ;i<length -1;i ++){
                 intArray[i] = intArray[i + 1];
@@ -98,7 +98,8 @@ public class OrderedArray {
         orderedArray.insert(89);
         orderedArray.insert(11);
         orderedArray.insert(7);
-        orderedArray.delete(71);
+        System.out.println(orderedArray.delete(71));
+        System.out.println(orderedArray.delete(11));
         orderedArray.display();
     }
 }
