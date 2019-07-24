@@ -49,12 +49,32 @@ public class BinaryTree {
 
 
     //插入新节点
-    public Node insert (Node node) {
+    public void insert (Node node) {
         if(root == null){
             root = node;
         }
 
         Node cur = root;
+        while(true){
+            //插入节点大于当前节点
+            if(cur.age < node.age){
+                if(cur.rightChild == null){
+                    cur.rightChild = node;
+                    return ;
+                }else{
+                    cur = cur.rightChild;
+                }
+            }else if(cur.age > node.age){
+                if(cur.leftChild == null){
+                    cur.leftChild = node;
+                    return;
+                }else{
+                    cur = cur.leftChild;
+                }
+            }
+        }
     }
+
+    //todo 删除指定节点
 
 }
