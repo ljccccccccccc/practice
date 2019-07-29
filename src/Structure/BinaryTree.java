@@ -136,7 +136,7 @@ public class BinaryTree {
             Node successor = cur.rightChild;
             Node successorParent = null;
 
-            while((successor.leftChild != null){
+            while(successor.leftChild != null){
                 successorParent = successor;
                 successor = successor.leftChild;
             }
