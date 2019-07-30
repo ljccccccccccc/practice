@@ -75,7 +75,7 @@ public class BinaryTree {
         }
     }
 
-    //todo 删除指定节点
+    //删除指定节点
     public boolean delete (Node node) {
         if(root == null){
             //树为空
@@ -169,11 +169,54 @@ public class BinaryTree {
             }
 
         }
-
-
         return true;
     }
 
+    //遍历
+    public static final int PREORDER = 1; //前序遍历
+    public static final int INORDER = 2;//后序遍历
+    public static final int POSTORDER = 3;//中序遍历
+
+
+    //todo  此部分未完成
+    public void traverse (int type){
+        switch (type) {
+            case 1 :
+                System.out.println("-----前序遍历-----");
+                preorder(root);
+                break;
+        }
+    }
+
+
+    //前序遍历
+    public void preorder (Node currentRoot) {
+        //递归遍历  currentRoot 为NULL时 跳出递归
+        if(currentRoot != null){
+            System.out.println(currentRoot.age + "\t");
+            preorder(currentRoot.leftChild);
+            preorder(currentRoot.rightChild);
+        }
+    }
+
+    //中序遍历
+    public void inorder (Node currentRoot){
+        if(currentRoot != null){
+            //递归遍历
+            inorder(currentRoot.leftChild);
+            System.out.println(currentRoot.age + "\t");
+            inorder(currentRoot.rightChild);
+        }
+    }
+
+    //后序遍历
+    public void postorder (Node currentRoot) {
+        if(currentRoot != null){
+            postorder(currentRoot.rightChild);
+            postorder(currentRoot.leftChild);
+            System.out.println(currentRoot.age + "\t");
+        }
+    }
 
 
 
