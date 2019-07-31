@@ -1,5 +1,9 @@
 package Structure;
 
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
+import java.util.ArrayList;
+
 public class BinaryTree {
     //树的节点类
     public class Node {
@@ -174,16 +178,26 @@ public class BinaryTree {
 
     //遍历
     public static final int PREORDER = 1; //前序遍历
-    public static final int INORDER = 2;//后序遍历
+    public static final int INORDER = 2;//中序遍历
     public static final int POSTORDER = 3;//中序遍历
 
 
-    //todo  此部分未完成
     public void traverse (int type){
         switch (type) {
             case 1 :
                 System.out.println("-----前序遍历-----");
                 preorder(root);
+                System.out.println();
+                break;
+            case 2 :
+                System.out.println("-----中序遍历-----");
+                inorder(root);
+                System.out.println();
+                break;
+            case 3 :
+                System.out.println("-----后序遍历-----");
+                postorder(root);
+                System.out.println();
                 break;
         }
     }
@@ -218,6 +232,109 @@ public class BinaryTree {
         }
     }
 
+    //最大深度
+    private int getDepth(Node currentNode , int initDeep){
+        int deep = initDeep;    //当前节点已到达深度
+        int leftDeep = initDeep;
+        int rightDeep = initDeep;
+
+        if(currentNode.leftChild != null){//递归调用
+            leftDeep = getDepth(currentNode.leftChild, deep + 1);
+        }
+        if(currentNode.rightChild != null){
+            rightDeep = getDepth(currentNode.rightChild , deep+1);
+        }
+        return Math.max(leftDeep,rightDeep);
+    }
+
+    //获取树的最大深度
+    public int getTreeDepth() {
+        if(root == null){
+            return 0;
+        }
+        return getDepth(root, 1);
+    }
+
+    //获取关键值最大的节点
+    public Node getMax () {
+        if(isEmpty()){
+            return null;
+        }
+        Node cur = root;
+        while(cur.rightChild != null){
+            cur = cur.rightChild;
+        }
+        return cur;
+
+    }
+
+    //获取最小的节点
+    public Node getMin () {
+        if(isEmpty()){
+            return null;
+        }
+        Node cur = root;
+        while(cur.leftChild != null){
+            cur = cur.leftChild;
+        }
+        return cur;
+    }
 
 
+    //以树的形式打印出该BTree
+    public void displayTree () {
+        int depth = getTreeDepth();
+        ArrayList<Node> currentLayerNodes = new ArrayList<Node> ();
+        currentLayerNodes.add(root);
+        int layerIndex  =1 ;
+
+        while(layerIndex <= depth){
+            int nodeBlankNum = (int)Math.pow(2,depth - layerIndex)-1;
+            for(int i = 0;i<currentLayerNodes.size();i++){
+                Node node = currentLayerNodes.get(i);
+                printBlank(nodeBlankNum);
+
+                if(node == null){
+                    System.out.print("*\t");
+                }else{
+                    System.out.print("* "+node.age+"\t");
+                }
+
+                printBlank(nodeBlankNum);
+                System.out.print("*\t");//补齐空位
+            }
+            System.out.println();
+            layerIndex++;
+            currentLayerNodes = getALLNodeOfThisLayer(currentLayerNodes);
+        }
+    }
+
+
+    //todo 这里没写完
+    private ArrayList<Node> getALLNodeOfThisLayer(ArrayList<Node> parentNodes) {
+        return null;
+    }
+
+    //空判断
+    public boolean isEmpty () {
+        return (root == null) ;
+    }
+
+
+    //打印出指定个数的空位
+    private void printBlank (int num){
+        for (int i = 0;i<num;i++){
+            System.out.println("*\t");
+        }
+    }
+
+    //判断是否为叶子节点
+    public boolean isLeaf (Node node) {
+        return (node.leftChild != null || node.rightChild != null);
+    }
+
+    //获取根节点
+    public Node getRoot (){
+        return root;
+    }
 }
