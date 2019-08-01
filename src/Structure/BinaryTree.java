@@ -312,7 +312,29 @@ public class BinaryTree {
 
     //todo 这里没写完
     private ArrayList<Node> getALLNodeOfThisLayer(ArrayList<Node> parentNodes) {
-        return null;
+        ArrayList list = new ArrayList<Node>();
+        Node parentNode;
+        for(int i = 0;i<parentNodes.size();i++){
+            parentNode = (Node) parentNodes.get(i);
+            if(parentNode != null){
+                if (parentNode.leftChild != null){
+                    //如果父节点有左子节点，加入集合
+                    list.add(parentNode.leftChild);
+                }else{
+                    list.add(null);
+                }
+
+                if (parentNode.rightChild != null){
+                    list.add(parentNode.rightChild);
+                }else{
+                    list.add(null);
+                }
+            }else{
+                list.add(null);
+                list.add(null);
+            }
+        }
+        return list;
     }
 
     //空判断
