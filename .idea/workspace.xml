@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec95007-b1ea-463a-b855-1d629394cdcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/BubbleSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +19,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sort/BubbleSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="245">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
               <folding>
                 <element signature="method#display#0;class#BubbleSort#0" />
+                <element signature="method#bubbleSort#0;class#BubbleSort#0" />
+                <element signature="method#bubbleSort2#0;class#BubbleSort#0" />
+                <element signature="method#bubbleSort3#0;class#BubbleSort#0" />
+                <element signature="e#1622#1720#1" />
               </folding>
             </state>
           </provider>
@@ -56,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -98,7 +101,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564716866353" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564972901542" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -210,7 +213,7 @@
       <workItem from="1564353970590" duration="109000" />
       <workItem from="1564440860624" duration="2775000" />
       <workItem from="1564612189129" duration="1690000" />
-      <workItem from="1564715355775" duration="2047000" />
+      <workItem from="1564715355775" duration="7018000" />
     </task>
     <task id="LOCAL-00001" summary="update a new Structure Stack">
       <created>1563344784219</created>
@@ -223,10 +226,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53140000" />
+    <option name="totallyTimeSpent" value="58111000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
@@ -238,7 +241,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3852459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,10 +340,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sort/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="245">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="method#display#0;class#BubbleSort#0" />
+            <element signature="method#bubbleSort#0;class#BubbleSort#0" />
+            <element signature="method#bubbleSort2#0;class#BubbleSort#0" />
+            <element signature="method#bubbleSort3#0;class#BubbleSort#0" />
+            <element signature="e#1622#1720#1" />
           </folding>
         </state>
       </provider>
