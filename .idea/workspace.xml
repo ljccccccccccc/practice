@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec95007-b1ea-463a-b855-1d629394cdcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,17 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sort/BubbleSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="80">
+              <caret line="11" selection-start-line="11" selection-end-line="17" />
               <folding>
+                <element signature="e#104#105#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
                 <element signature="method#display#0;class#BubbleSort#0" />
                 <element signature="method#bubbleSort#0;class#BubbleSort#0" />
                 <element signature="method#bubbleSort2#0;class#BubbleSort#0" />
                 <element signature="method#bubbleSort3#0;class#BubbleSort#0" />
-                <element signature="e#1622#1720#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sort/SelectionSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding>
+                <element signature="e#111#112#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,6 +71,8 @@
         <option value="$PROJECT_DIR$/src/Structure/DoublelyLinkList.java" />
         <option value="$PROJECT_DIR$/src/Structure/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/Sort/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/Sort/selectionSort.java" />
+        <option value="$PROJECT_DIR$/src/Sort/SelectionSort.java" />
       </list>
     </option>
   </component>
@@ -71,7 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -95,13 +111,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564972901542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565058890191" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -119,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.SelectionSort">
     <configuration name="BinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Structure.BinaryTree" />
       <module name="practice" />
@@ -159,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Structure.Queue" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.SelectionSort" />
       <module name="practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Structure.*" />
+          <option name="PATTERN" value="Sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,18 +198,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Queue" />
       <item itemvalue="Application.DoublelyLinkList" />
       <item itemvalue="Application.BinaryTree" />
       <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.SelectionSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.BinaryTree" />
         <item itemvalue="Application.DoublelyLinkList" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Queue" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +230,8 @@
       <workItem from="1564353970590" duration="109000" />
       <workItem from="1564440860624" duration="2775000" />
       <workItem from="1564612189129" duration="1690000" />
-      <workItem from="1564715355775" duration="7018000" />
+      <workItem from="1564715355775" duration="12903000" />
+      <workItem from="1565055721561" duration="3001000" />
     </task>
     <task id="LOCAL-00001" summary="update a new Structure Stack">
       <created>1563344784219</created>
@@ -226,13 +244,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58111000" />
+    <option name="totallyTimeSpent" value="66997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -241,7 +259,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3852459" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32131147" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -311,13 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Structure/DoublelyLinkList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
@@ -338,16 +349,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sort/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="80">
+          <caret line="11" selection-start-line="11" selection-end-line="17" />
           <folding>
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
             <element signature="method#display#0;class#BubbleSort#0" />
             <element signature="method#bubbleSort#0;class#BubbleSort#0" />
             <element signature="method#bubbleSort2#0;class#BubbleSort#0" />
             <element signature="method#bubbleSort3#0;class#BubbleSort#0" />
-            <element signature="e#1622#1720#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sort/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
           </folding>
         </state>
       </provider>
